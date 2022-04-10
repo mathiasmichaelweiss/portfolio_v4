@@ -1,8 +1,9 @@
 import { HttpService } from './../../../services/http.service';
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { Languages } from 'src/app/models/languages';
 import { Subscription } from 'rxjs';
 import { LanguageService } from '../../../services/language.service';
+import { NavigationService } from '../../../services/navigation.service';
 
 @Component({
   selector: 'app-skills',
@@ -11,6 +12,7 @@ import { LanguageService } from '../../../services/language.service';
 })
 export class SkillsComponent implements OnInit, OnDestroy {
   @Input() isSoftSkills: boolean = false;
+  @Input() scroll: boolean = false;
 
   public hardSkills: any;
   public softSkills: any;
@@ -21,9 +23,12 @@ export class SkillsComponent implements OnInit, OnDestroy {
   private languages: Languages = {english: true, deutsch: false};
   private _languagesSubscr = new Subscription;
 
+  @ViewChild('skillsEl') skillsEl!: ElementRef<HTMLElement>;
+
   constructor(
     private readonly _httpService: HttpService,
     private readonly _languageServie: LanguageService,
+    private readonly _navigationService: NavigationService,
     ) {
       this._languagesSubscr = this._languageServie.languages.subscribe(languages => 
         {
@@ -34,6 +39,12 @@ export class SkillsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this._initSkillsData();
+  }
+
+  ngAfterViewInit(): void {
+    if (this.scroll) {      
+      this._navigationService.setSkills(this.skillsEl.nativeElement); 
+    } 
   }
 
   private _initSkillsData(): void {

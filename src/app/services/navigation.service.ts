@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
 })
 export class NavigationService {
   public experience$ = new Subject<HTMLElement>();
-  public skills$ = new Subject<HTMLElement>();
+  public skills$ = new Subject<HTMLElement | null>();
   public education$ = new Subject<HTMLElement>();
   public works$ = new Subject<HTMLElement>();
 
@@ -15,7 +15,7 @@ export class NavigationService {
     console.log(element);
   }
 
-  public setSkills(element: HTMLElement): void {
+  public setSkills(element: HTMLElement | null): void {
     this.skills$.next(element);
   }
 

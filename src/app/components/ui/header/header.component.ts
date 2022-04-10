@@ -4,6 +4,8 @@ import { MenuItem } from '../../../models/menu';
 import { HttpService } from '../../../services/http.service';
 import { Subscription } from 'rxjs';
 import { Languages } from 'src/app/models/languages';
+import { NavigationService } from '../../../services/navigation.service';
+import { WindowService } from 'src/app/services/window.service';
 
 @Component({
   selector: 'app-header',
@@ -18,7 +20,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
   @Input() menu: boolean = false;
 
   public navigation!: MenuItem;
-
+  public experienceEl!: HTMLElement;
+  public skillsEl!: HTMLElement | null;
+  public educationEl!: HTMLElement;
+  public worksEl!: HTMLElement;
+  
   private _menuSubscr = new Subscription;
   private languages: Languages = {english: true, deutsch: false}
 
@@ -26,7 +32,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   constructor(
     private readonly _languageServie: LanguageService,
     private readonly _httpService: HttpService,
-    ) {
+    private readonly _navigationService: NavigationService,
+    private _winRef: WindowService,
+    ) {      
       this._initHeader();
       this._menuSubscr = this._languageServie.languages.subscribe(languages => 
         {
@@ -36,6 +44,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit() {
+    this._navigationService.experience$.subscribe(el => this.experienceEl = el);
+    this._navigationService.skills$.subscribe(el => this.skillsEl = el);
+    this._navigationService.education$.subscribe(el => this.educationEl = el);
+    this._navigationService.works$.subscribe(el => this.worksEl = el);
   }
 
   public setLanguage(eng: boolean): void {
@@ -68,5 +83,18 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this._menuSubscr.unsubscribe();
+  }
+
+  public scrollTo(element: HTMLElement | null): void {
+    // if (element !== null) {
+    //   element.scrollIntoView({
+    //     behavior: "smooth",
+    //     block: "start",
+    //     inline: "nearest"
+    //   });
+    // }
+    const y = element?.getBoundingClientRect().top + this._winRef.nativeWindow.pageYOffset - 100;
+
+    this._winRef.nativeWindow.scrollTo({top: y, behavior: 'smooth'});
   }
 }

@@ -1,8 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, ViewChild } from '@angular/core';
 import { HttpService } from '../../../services/http.service';
 import { Languages } from 'src/app/models/languages';
 import { Subscription } from 'rxjs';
 import { LanguageService } from '../../../services/language.service';
+import { NavigationService } from '../../../services/navigation.service';
 
 @Component({
   selector: 'app-works',
@@ -23,9 +24,12 @@ export class WorksComponent implements OnInit, OnDestroy {
   private languages: Languages = {english: true, deutsch: false};
   private _languagesSubscr = new Subscription;
 
+  @ViewChild('works') works!: ElementRef<HTMLElement>;
+
   constructor(
     private readonly _httpService: HttpService,
     private readonly _languageService: LanguageService,
+    private readonly _navigationService: NavigationService,
     ) { 
     this._languagesSubscr = this._languageService.languages.subscribe(languages => 
       {
@@ -37,6 +41,11 @@ export class WorksComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this._initWorksData();
   }
+
+  ngAfterViewInit(): void {     
+    this._navigationService.setWorks(this.works.nativeElement); 
+  }
+
 
   public prev(
     imageWrapper: HTMLElement, 

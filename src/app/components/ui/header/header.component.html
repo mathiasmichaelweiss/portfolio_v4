@@ -7,16 +7,16 @@
         </div>
         <nav>
             <ul>
-                <a routerLink="/experience">
+                <a routerLink="/experience" (click)="scrollTo(experienceEl)">
                     <li> {{ navigation.experience }} </li>
                 </a>
-                <a routerLink="/skills">
+                <a routerLink="/skills" (click)="scrollTo(skillsEl)">
                     <li> {{ navigation.skills }} </li>
                 </a>
-                <a routerLink="/education">
+                <a routerLink="/education" (click)="scrollTo(educationEl)">
                     <li> {{ navigation.education }} </li>
                 </a>
-                <a routerLink="/works">
+                <a routerLink="/works" (click)="scrollTo(worksEl)">
                     <li> {{ navigation.works }} </li>
                 </a>
             </ul>

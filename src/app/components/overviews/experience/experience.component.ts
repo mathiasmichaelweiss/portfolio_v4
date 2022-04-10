@@ -11,8 +11,6 @@ import { NavigationService } from '../../../services/navigation.service';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit, OnDestroy {
-  @ViewChild('experienceElement') experienceElement: ElementRef | any;
-
   public experience: any;
   public quote: string = ""
   public button: string = "";
@@ -22,14 +20,13 @@ export class ExperienceComponent implements OnInit, OnDestroy {
   private languages: Languages = {english: true, deutsch: false};
   private _languagesSubscr = new Subscription;
 
+  @ViewChild('experienceElement') experienceElement!: ElementRef<HTMLElement>;
+
   constructor(
     private readonly _httpService: HttpService,
     private readonly _languageService: LanguageService,
     private readonly _navigationService: NavigationService,
     ) {
-      console.log(this.experienceElement);
-      
-      this._navigationService.setExperience(this.experienceElement);
       this._languagesSubscr = this._languageService.languages.subscribe(languages => 
         {
           this.languages = languages; this._initExperience()
@@ -39,6 +36,10 @@ export class ExperienceComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this._initExperience();
+  }
+
+  ngAfterViewInit() {
+    this._navigationService.setExperience(this.experienceElement.nativeElement);
   }
 
   private _initExperience(): void {
