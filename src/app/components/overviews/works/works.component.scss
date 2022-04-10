@@ -57,6 +57,8 @@
                 display: flex;
                 overflow: hidden;
                 .work-descr-slider {
+                    width: 100%;
+                    justify-content: space-between;
                     position: relative;
                     left: 0;
                     transition: left 0.3s ease-in-out;
@@ -101,6 +103,20 @@
             left: 0;
             top: 0;
             background-color: $blue;
+        }
+    }
+}
+
+a {
+    height: fit-content;
+    &:hover {
+        color: $white !important;
+    }
+    i {
+        font-size: 25px;
+        color: $white-darken;
+        &:hover {
+            color: $white;
         }
     }
 }

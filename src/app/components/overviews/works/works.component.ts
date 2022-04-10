@@ -15,6 +15,7 @@ export class WorksComponent implements OnInit, OnDestroy {
   public width: any;
   public activeCounter: number = 0;
   public devIcons: any;
+  public link?: string;
 
   private left: number = 0;
   private leftDescr: number = 0;
@@ -31,6 +32,7 @@ export class WorksComponent implements OnInit, OnDestroy {
     private readonly _languageService: LanguageService,
     private readonly _navigationService: NavigationService,
     ) { 
+    this._initWorksData();
     this._languagesSubscr = this._languageService.languages.subscribe(languages => 
       {
         this.languages = languages; this._initWorksData();
@@ -43,9 +45,8 @@ export class WorksComponent implements OnInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {     
-    this._navigationService.setWorks(this.works.nativeElement); 
+    this._navigationService.setWorks(this.works?.nativeElement); 
   }
-
 
   public prev(
     imageWrapper: HTMLElement, 
@@ -97,7 +98,9 @@ export class WorksComponent implements OnInit, OnDestroy {
           textContent: this.languages.english ? work.languages.english : work.languages.german, 
           link: work.link
         }
-    });
+      },
+      this.link = this.languages.english ? "to the work" : "zu der Work"
+    );
       this.counter = this.worksEnglish.length - 1;
       this.devIcons = this.worksEnglish.map((w: any) => Object.values(w.devIcons));
       this.width = this.counter * this.imageWidth;

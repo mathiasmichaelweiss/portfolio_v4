@@ -19,7 +19,12 @@ export class HeaderComponent implements OnInit, OnDestroy {
   @Input() lightTheme: boolean = true;
   @Input() menu: boolean = false;
 
-  public navigation!: MenuItem;
+  public navigation: MenuItem = {
+    education: "Education",
+    experience: "Experience",
+    skills: "Skills",
+    works: "Works",
+  };
   public experienceEl!: HTMLElement;
   public skillsEl!: HTMLElement | null;
   public educationEl!: HTMLElement;
@@ -28,12 +33,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private _menuSubscr = new Subscription;
   private languages: Languages = {english: true, deutsch: false}
 
-
   constructor(
     private readonly _languageServie: LanguageService,
     private readonly _httpService: HttpService,
     private readonly _navigationService: NavigationService,
-    private _winRef: WindowService,
+    private readonly _winRef: WindowService,
     ) {      
       this._initHeader();
       this._menuSubscr = this._languageServie.languages.subscribe(languages => 
@@ -86,15 +90,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   public scrollTo(element: HTMLElement | null): void {
-    // if (element !== null) {
-    //   element.scrollIntoView({
-    //     behavior: "smooth",
-    //     block: "start",
-    //     inline: "nearest"
-    //   });
-    // }
     const y = element?.getBoundingClientRect().top + this._winRef.nativeWindow.pageYOffset - 100;
-
     this._winRef.nativeWindow.scrollTo({top: y, behavior: 'smooth'});
   }
 }

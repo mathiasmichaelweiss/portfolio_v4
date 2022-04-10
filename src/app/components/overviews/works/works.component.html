@@ -1,4 +1,4 @@
-<ng-container>
+<ng-container *ngIf="worksEnglish">
     <div #works class="container">
         <div class="title-description">
             <h2 class="bold-text">Works</h2>
@@ -25,6 +25,9 @@
                                 <div class="dev-logos white-text mt-3 d-flex"><i *ngFor="let icon of devIcons[activeCounter]" [class]="icon + ' ' + 'mr-2'"></i></div>
                                 <p class="white-text">{{ worksEnglish[activeCounter].textContent.description }}</p>
                             </div>
+                            <a [href]="worksEnglish[activeCounter].link" target="_blank">
+                                <i class="bi bi-window-plus"></i>
+                            </a>
                         </div>
                     </div>
                 <div class="next" (click)="next(imageWrapper, workImage)"><i class="bi bi-arrow-right-square"></i></div>

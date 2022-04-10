@@ -12,7 +12,6 @@ export class NavigationService {
 
   public setExperience(element: HTMLElement): void {
     this.experience$.next(element);
-    console.log(element);
   }
 
   public setSkills(element: HTMLElement | null): void {
