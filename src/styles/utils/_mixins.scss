@@ -1,0 +1,12 @@
+@import "./variables";
+
+@keyframes showMenu {
+    0% {
+        opacity: 0;
+        top: $tenPX * 9;
+    }
+    100% {
+        opacity: 1;
+        top: $tenPX * 8;
+    }
+}

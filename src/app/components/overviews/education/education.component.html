@@ -1,0 +1,29 @@
+<ng-container>
+    <div class="education-overview">
+        <div class="education-bg">
+        </div>
+        <div class="container">
+            <div class="title-description">
+                <h2 class="white-text bold-text">{{ title }}</h2>
+            </div>
+            <div class="education-items">
+                <app-card-item 
+                    *ngFor="let education of educations"
+                    [place]="education.place"
+                    [cetrtificate]="education.cetrtificate"
+                    [placeLogo]="education.place_logo"
+                    [time]="education.time ? education.time : null"
+                    [title]="education.title"
+                    [date]="education.date"
+                    [subject]="education.subject ? education.subject : null"
+                    [width]="100"
+                    [certificateText]="certificate"
+                >
+                </app-card-item>
+            </div>
+            <a href="mailto:mathiasmichaelweiss@gmail.com">
+                <button class="button long"> {{ button }} </button> 
+            </a>
+        </div>
+    </div>
+</ng-container>

@@ -1,0 +1,586 @@
+{
+  "name": {
+    "english": "mathias michael weiss",
+    "german": "mathias michael weiß"
+  },
+  "position": {
+    "english": "frontend developer",
+    "german": "frontend entwickler"
+  },
+  "resume": {
+    "english": "cv",
+    "german": "lebenslauf"
+  },
+  "about": {
+    "english": "My live style is about daily challenges and steady progress. I am always on the lookout for best programming practices, ways to improve code quality. Every time I try to keep my code as clean and structured as possible.",
+    "german": "bei meinem lifestyle geht es um tägliche herausforderungen und stetigen fortschritt. ich bin immer auf der suche nach den besten programmierpraktiken und möglichkeiten zur verbesserung der codequalität. jedes mal versuche ich, meinen code so sauber und strukturiert wie möglich zu halten."
+  },
+  "adress": {
+    "english": "heilbronn, germany",
+    "german": "heilbronn, deutschland"
+  },
+
+  "menu": {
+    "english": {
+      "experience": "Experience",
+      "skills": "Skills",
+      "education": "Education",
+      "works": "Works"
+    },
+    "german": {
+      "experience": "Erfahrung",
+      "skills": "Fähigkeiten",
+      "education": "Ausbildung",
+      "works": "Works"
+    }
+  },
+
+  "button": {
+    "english": "Contact with me",
+    "german": "Bleiben Sie bei mir"
+  },
+
+  "experience_eng": {
+    "copy-mania": {
+      "logo": "../../../../assets/logos/copy.svg",
+      "date": "2014-2019",
+      "company": "Ltd. “COPY-MANIA”",
+      "position": "SEO / Print Designer",
+      "about": "Design of all kinds of print products. Working with customers. human resources management Financial and management organization. Establish business contacts with partners of the company. organization of accounting"
+    },
+    "roth": {
+      "logo": "../../../../assets/logos/roth.svg",
+      "date": "January 2022 - February 2022",
+      "company": "ROTH Gruppe",
+      "position": "Software Engineer",
+      "about": "Support of the development in the frontend of the company's web ERP application. Realization of design specifications in HTML & CSS. Implementation of new functions based on concepts and specifications. Familiarization with Angular-based frontend frameworks such as Devexpress. Assisting the development team in funded projects"
+    }
+  },
+
+  "experience_ger": {
+    "copy-mania": {
+      "logo": "../../../../assets/logos/copy.svg",
+      "date": "2014-2019",
+      "company": "GmbH “COPY-MANIA”",
+      "position": "Geschäftsführer / Druckdesigner",
+      "about": "Gestaltung von Druckerzeugnissen aller Art. Arbeiten mit Kunden. Personalmanagement. Finanz- und Managementorganisation. Knüpfen Sie Geschäftskontakte mit Partnern des Unternehmens. Organisation der Buchhaltung"
+    },
+    "roth": {
+      "logo": "../../../../assets/logos/roth.svg",
+      "date": "Januar 2022 -  Februar 2022",
+      "company": "ROTH Gruppe",
+      "position": "Software Entwickler",
+      "about": "Unterstützung der Entwicklung im Frontend der Web-ERP-Anwendung des Unternehmens. Umsetzung von Designvorgaben in HTML & CSS. Implementierung neuer Funktionen auf Basis von Konzepten und Spezifikationen. Einarbeitung in Angular-basierte Frontend-Frameworks wie Devexpress. Unterstützung des Entwicklungsteams in geförderten Projekten"
+    }
+  },
+
+  "works": {
+    "game_of_life": {
+      "image": "../../../../assets/works/game-of-life.png",
+      "languages": {
+        "english": {
+          "title": "Game of life",
+          "description": "Conway's Game of Life is a cellular automaton invented by English mathematician John Conway in 1970."
+        },
+        "german": {
+          "title": "Game of life",
+          "description": "Conways Game of Life ist ein zellulärer Automat, der 1970 vom englischen Mathematiker John Conway erfunden wurde."
+        }
+      },
+      "link": "https://weiss-game-of-life.web.app/",
+      "dev": {
+        "angular": "devicon-angularjs-plain"
+      }
+    },
+    "github_search": {
+      "image": "../../../../assets/works/github-search.png",
+      "languages": {
+        "english": {
+          "title": "Github search",
+          "description": "search engine to search github users"
+        },
+        "german": {
+          "title": "Github suche",
+          "description": "Suchmaschine zum Suchen von Github-Benutzern"
+        }
+      },
+      "link": "https://github-search-37856.web.app/",
+      "dev": {
+        "react": "devicon-react-original"
+      }
+    },
+    "form_validator": {
+      "image": "../../../../assets/works/form-validator.png",
+      "languages": {
+        "english": {
+          "title": "Form validator",
+          "description": "beautiful validation of the registration form"
+        },
+        "german": {
+          "title": "Formularprüfer",
+          "description": "schöne Validierung des Registrierungsformulars"
+        }
+      },
+      "link": "https://mathiasmichaelweiss.github.io/sign-up-in-window/",
+      "dev": {
+        "js": "devicon-javascript-plain",
+        "html": "devicon-html5-plain",
+        "sass": "devicon-sass-original"
+      }
+    },
+    "germany_weather": {
+      "image": "../../../../assets/works/germany-weather.png",
+      "languages": {
+        "english": {
+          "title": "Weather in germany",
+          "description": "Website with weather information in Germany"
+        },
+        "german": {
+          "title": "Wetter in deutschland",
+          "description": "Website mit Wetterinformationen in Deutschland"
+        }
+      },
+      "link": "https://wealther-3529e.web.app/",
+      "dev": {
+        "react": "devicon-react-original"
+      }
+    },
+    "weiss_movie": {
+      "image": "../../../../assets/works/weiss-movie.png",
+      "languages": {
+        "english": {
+          "title": "Weiss movie",
+          "description": "rating of movies and series"
+        },
+        "german": {
+          "title": "Weiss movie",
+          "description": "Bewertung von Filmen und Serien"
+        }
+      },
+      "link": "https://weiss-movie.web.app/home",
+      "dev": {
+        "angular": "devicon-angularjs-plain"
+      }
+    },
+    "minimal_landing": {
+      "image": "../../../../assets/works/m-landing.png",
+      "languages": {
+        "english": {
+          "title": "Minimal landing page",
+          "description": ""
+        },
+        "german": {
+          "title": "Minimal landing page",
+          "description": ""
+        }
+      },
+      "link": "https://mathiasmichaelweiss.github.io/MINIMAL-landing-page/",
+      "dev": {
+        "js": "devicon-javascript-plain",
+        "html": "devicon-html5-plain",
+        "sass": "devicon-sass-original",
+        "php": "devicon-php-plain"
+      }
+    },
+    "password_gen": {
+      "image": "../../../../assets/works/password-gen.png",
+      "languages": {
+        "english": {
+          "title": "Password generator",
+          "description": "strong password generator"
+        },
+        "german": {
+          "title": "Passwortgenerator",
+          "description": "Generator für starke Passwörter"
+        }
+      },
+      "link": "https://weiss-password.web.app/",
+      "dev": {
+        "angular": "devicon-angularjs-plain"
+      }
+    },
+    "anailsroom": {
+      "image": "../../../../assets/works/anailsroom.png",
+      "languages": {
+        "english": {
+          "title": "Anailsroom nails salon",
+          "description": "landing page for a nail salon in moscow"
+        },
+        "german": {
+          "title": "Anailsroom nagel salon",
+          "description": "Landing Page für ein Nagelstudio in Moskau"
+        }
+      },
+      "link": "https://anailsroom.ru/index.html#main",
+      "dev": {
+        "js": "devicon-javascript-plain",
+        "html": "devicon-html5-plain",
+        "sass": "devicon-sass-original"
+      }
+    },
+    "solar_system": {
+      "image": "../../../../assets/works/solar-system.png",
+      "languages": {
+        "english": {
+          "title": "Solar system",
+          "description": "landing page about the planets of the solar system"
+        },
+        "german": {
+          "title": "Sonnensystem",
+          "description": "Landing Page über die Planeten des Sonnensystems"
+        }
+      },
+      "link": "https://mathiasmichaelweiss.github.io/solar-sustem/",
+      "dev": {
+        "js": "devicon-javascript-plain",
+        "html": "devicon-html5-plain",
+        "sass": "devicon-sass-original"
+      }
+    },
+    "megabrand": {
+      "image": "../../../../assets/works/megabrand.png",
+      "languages": {
+        "english": {
+          "title": "Second hand Megabrand",
+          "description": "website of the chain of second-hand stores in Russia"
+        },
+        "german": {
+          "title": "Second hand Megabrand",
+          "description": "Website der Kette von Second-Hand-Läden in Russland"
+        }
+      },
+      "link": "https://mega-brand.ru/",
+      "dev": {
+        "js": "devicon-javascript-plain",
+        "html": "devicon-html5-plain",
+        "css": "devicon-css3-plain"
+      }
+    },
+    "currency_converter": {
+      "image": "../../../../assets/works/currency-converter.png",
+      "languages": {
+        "english": {
+          "title": "Currency converter",
+          "description": ""
+        },
+        "german": {
+          "title": "Währungsrechner",
+          "description": ""
+        }
+      },
+      "link": "https://currency-converter-efcbf.web.app/current-currency",
+      "dev": {
+        "react": "devicon-react-original"
+      }
+    },
+    "timer": {
+      "image": "../../../../assets/works/timer.png",
+      "languages": {
+        "english": {
+          "title": "25 + 5 Clock",
+          "description": "The Pomodoro timer is a well-known productivity interval that has been shown to improve your productivity. "
+        },
+        "german": {
+          "title": "25 + 5 Clock",
+          "description": "Der Pomodoro-Timer ist ein bekanntes Produktivitätsintervall, das nachweislich Ihre Produktivität verbessert."
+        }
+      },
+      "link": "https://FreeCodecamp-breaksessiontimer.web.app/",
+      "dev": {
+        "react": "devicon-react-original"
+      }
+    },
+
+    "custome_slider": {
+      "image": "../../../../assets/works/custome-slider.png",
+      "languages": {
+        "english": {
+          "title": "Custome slider",
+          "description": ""
+        },
+        "german": {
+          "title": "Custome slider (german)",
+          "description": ""
+        }
+      },
+      "link": "https://mathiasmichaelweiss.github.io/decati797Slider/",
+      "dev": {
+        "js": "devicon-javascript-plain",
+        "html": "devicon-html5-plain",
+        "sass": "devicon-sass-original"
+      }
+    }
+  },
+
+  "skills_ger": {
+    "0": {
+      "name": "html5",
+      "description": "HyperText Markup Language (HTML) ist ein Satz von Markup-Symbolen oder -Codes, die in eine Datei eingefügt werden, die zur Anzeige im Internet bestimmt ist."
+    },
+    "1": {
+      "name": "css3 (Sass/Scss)",
+      "description": "Cascading Style Sheets (CSS) ist eine Stylesheet-Sprache, die verwendet wird, um die Präsentation eines in HTML oder XML (einschließlich XML-Dialekten wie SVG, MathML oder XHTML) geschriebenen Dokuments zu beschreiben."
+    },
+    "2": {
+      "name": "JavaScript (ES6+)",
+      "description": "JavaScript (oft als JS abgekürzt) ist eine leichtgewichtige, interpretierte, objektorientierte Sprache mit erstklassigen Funktionen und ist vor allem als Skriptsprache für Webseiten bekannt, wird aber auch in vielen Nicht-Browser-Umgebungen verwendet."
+    },
+    "3": {
+      "name": "React",
+      "description": "React ist eine Bibliothek zum Erstellen von zusammensetzbaren Benutzeroberflächen. Es fördert die Erstellung wiederverwendbarer UI-Komponenten, die Daten darstellen, die sich im Laufe der Zeit ändern."
+    },
+    "4": {
+      "name": "Redux",
+      "description": "Redux ist ein Muster und eine Bibliothek zum Verwalten und Aktualisieren des Anwendungsstatus mithilfe von Ereignissen, die als 'Aktionen' bezeichnet werden."
+    },
+    "5": {
+      "name": "Bootstrap 4",
+      "description": "Bootstrap ist ein leistungsstarkes Toolkit – eine Sammlung von HTML-, CSS- und JavaScript-Tools zum Erstellen und Erstellen von Webseiten und Webanwendungen."
+    },
+    "6": {
+      "name": "GIT",
+      "description": "Git ist eine Software zum Verfolgen von Änderungen in einem beliebigen Satz von Dateien, die normalerweise zum Koordinieren der Arbeit zwischen Programmierern verwendet wird, die während der Softwareentwicklung gemeinsam Quellcode entwickeln."
+    },
+    "7": {
+      "name": "Angular",
+      "description": "Angular ist eine Plattform und ein Framework zum Erstellen von Single-Page-Client-Anwendungen mit HTML und TypeScript."
+    },
+    "8": {
+      "name": "typescript",
+      "description": "TypeScript ist eine Programmiersprache, die von Microsoft entwickelt und gepflegt wird. Es ist eine strikte syntaktische Obermenge von JavaScript und fügt der Sprache optional statische Typisierung hinzu. TypeScript ist für die Entwicklung großer Anwendungen konzipiert und transkompiliert in JavaScript."
+    },
+    "9": {
+      "name": "Adobe Illustrator",
+      "description": "Adobe Illustrator ist ein professionelles vektorbasiertes Design- und Zeichenprogramm. Als Teil eines größeren Design-Workflows ermöglicht Illustrator die Erstellung von allem, von einzelnen Designelementen bis hin zu ganzen Kompositionen. Designer verwenden Illustrator zum Erstellen von Postern, Symbolen, Logos, Mustern, Symbolen usw."
+    },
+    "10": {
+      "name": "Adobe Photoshop",
+      "description": "Adobe Photoshop ist die vorherrschende Bildbearbeitungs- und Manipulationssoftware auf dem Markt. Seine Einsatzmöglichkeiten reichen von der voll funktionsfähigen Bearbeitung großer Fotostapel bis hin zur Erstellung komplizierter digitaler Gemälde und Zeichnungen, die denen von Hand nachempfunden sind."
+    },
+    "11": {
+      "name": "Figma",
+      "description": "Figma is a vector graphics editor and prototyping tool which is primarily web-based."
+    },
+    "12": {
+      "name": "Node.js",
+      "description": "Node.js (Node) ist eine Open-Source-Entwicklungsplattform zur serverseitigen Ausführung von JavaScript-Code. Node ist nützlich für die Entwicklung von Anwendungen, die eine dauerhafte Verbindung vom Browser zum Server erfordern, und wird häufig für Echtzeitanwendungen wie Chat, Newsfeeds und Web-Push-Benachrichtigungen verwendet."
+    },
+    "13": {
+      "name": "Kreativität",
+      "description": "Kreativität ist der Akt, neue und fantasievolle Ideen in die Realität umzusetzen."
+    },
+    "14": {
+      "name": "Selbstorganisation",
+      "description": "The term self-organization refers to the process by which individuals organize their communal behavior to create global order by interactions amongst themselves rather than through external intervention or instruction."
+    },
+    "15": {
+      "name": "Stresstoleranz",
+      "description": "Stresstoleranz ist die Fähigkeit, mit Schwierigkeiten entspannt und gelassen umzugehen. Eine positive Stresstoleranz bedeutet, ruhig bleiben zu können, ohne sich von starken Gefühlen der Hilflosigkeit und Hoffnungslosigkeit mitreißen zu lassen."
+    },
+    "16": {
+      "name": "Kommunikation",
+      "description": "Kommunikationsfähigkeiten befähigen den Einzelnen, andere zu verstehen und selbst verstanden zu werden."
+    }
+  },
+  "skills_eng": {
+    "0": {
+      "name": "HTML5",
+      "description": "HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet.",
+      "logo": "devicon-html5-plain"
+    },
+    "1": {
+      "name": "CSS3",
+      "description": "Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML).",
+      "logo": "devicon-css3-plain"
+    },
+    "2": {
+      "name": "JavaScript",
+      "description": "JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.",
+      "logo": "devicon-javascript-plain"
+    },
+    "3": {
+      "name": "React",
+      "description": "React is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
+      "logo": "devicon-react-original"
+    },
+    "4": {
+      "name": "Redux",
+      "description": "Redux is a pattern and library for managing and updating application state, using events called 'actions'.",
+      "logo": "devicon-redux-original"
+    },
+    "5": {
+      "name": "Bootstrap 4",
+      "description": "Bootstrap is a powerful toolkit - a collection of HTML, CSS, and JavaScript tools for creating and building web pages and web applications.",
+      "logo": "devicon-bootstrap-plain"
+    },
+    "6": {
+      "name": "GIT",
+      "description": "Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.",
+      "logo": "devicon-git-plain"
+    },
+    "7": {
+      "name": "Angular",
+      "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript.",
+      "logo": "devicon-angularjs-plain"
+    },
+    "8": {
+      "name": "TypeScript",
+      "description": "TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. TypeScript is designed for the development of large applications and transcompiles to JavaScript.",
+      "logo": "devicon-typescript-plain"
+    },
+    "9": {
+      "name": "Adobe Illustrator",
+      "description": "Adobe Illustrator is a professional vector-based design and drawing program. Used as part of a larger design workflow, Illustrator allows for the creation of everything from single design elements to entire compositions. Designers use Illustrator to create posters, symbols, logos, patterns, icons, etc.",
+      "logo": "devicon-illustrator-plain"
+    },
+    "10": {
+      "name": "Adobe Photoshop",
+      "description": "Adobe Photoshop is the predominant photo editing and manipulation software on the market. Its uses range from the full-featured editing of large batches of photos to creating intricate digital paintings and drawings that mimic those done by hand.",
+      "logo": "devicon-photoshop-plain"
+    },
+    "11": {
+      "name": "Figma",
+      "description": "Figma is a vector graphics editor and prototyping tool which is primarily web-based.",
+      "logo": "devicon-figma-plain"
+    },
+    "12": {
+      "name": "Node.js",
+      "description": "Node.js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.",
+      "logo": "devicon-nodejs-plain"
+    },
+    "13": {
+      "name": "Creativity",
+      "description": "Creativity is the act of turning new and imaginative ideas into reality.",
+      "soft_skill": true
+    },
+    "14": {
+      "name": "Self-organisation",
+      "description": "The term self-organization refers to the process by which individuals organize their communal behavior to create global order by interactions amongst themselves rather than through external intervention or instruction.",
+      "soft_skill": true
+    },
+    "15": {
+      "name": "Stress tolerance",
+      "description": "Stress tolerance is the ability to be relaxed and composed when faced with difficulties. Having positive stress tolerance is being able to stay calm without getting carried away by strong emotions of helplessness and hopelessness.",
+      "soft_skill": true
+    },
+    "16": {
+      "name": "Communication",
+      "description": "Communication skills enable individuals to understand others and to be understood themselves.",
+      "soft_skill": true
+    }
+  },
+  "education_eng": {
+    "0": {
+      "title": "Front end Libraries",
+      "date": "Issued August 2021",
+      "place": "FreeCodeCamp",
+      "time": "300 hours",
+      "cetrtificate": "https://www.FreeCodecamp.org/certification/fcca7b18523-6ac5-45f8-ae24-c263439ae86a/front-end-libraries",
+      "place_logo": "../../../../assets/logos/FreeCodeCamp.svg"
+    },
+    "1": {
+      "title": "Responsive Web Design",
+      "date": "Issued July, 2021",
+      "place": "FreeCodeCamp",
+      "time": "300 hours",
+      "cetrtificate": "https://www.FreeCodecamp.org/certification/fcca7b18523-6ac5-45f8-ae24-c263439ae86a/responsive-web-design",
+      "place_logo": "../../../../assets/logos/FreeCodeCamp.svg"
+    },
+    "2": {
+      "title": "React JS. Practical course 2020",
+      "date": "Issued Apr, 2021",
+      "place": "Udemy Academy",
+      "time": "18.5 hours",
+      "cetrtificate": "https://ibb.co/PrVHjL4",
+      "place_logo": "../../../../assets/logos/udemy.svg"
+    },
+    "3": {
+      "title": "The Complete JavaScript + React Course",
+      "date": "Issued Jan 2021",
+      "place": "Udemy Academy",
+      "time": "41.5 hours",
+      "cetrtificate": "https://ibb.co/k0hjJP4",
+      "place_logo": "../../../../assets/logos/udemy.svg"
+    },
+    "4": {
+      "title": "WEB Developer 2021",
+      "date": "Issued Dec, 2020",
+      "place": "Udemy Academy",
+      "time": "33.5 hours",
+      "cetrtificate": "https://ibb.co/99GRRgT",
+      "place_logo": "../../../../assets/logos/udemy.svg"
+    },
+    "5": {
+      "title": "Russian State Social University",
+      "date": "2014-2018",
+      "place": "RGSU",
+      "cetrtificate": "",
+      "place_logo": "../../../../assets/logos/RGSU.svg",
+      "uni": true,
+      "faculty": "Economic security",
+      "subject": "Banking services provided by state agencies that Security of the Russian Federation"
+    }
+  },
+  "education_ger": {
+    "0": {
+      "title": "Front end Libraries",
+      "date": "Ausgestellt: August 2021",
+      "place": "FreeCodeCamp",
+      "time": "300 Stunden",
+      "cetrtificate": "https://www.FreeCodecamp.org/certification/fcca7b18523-6ac5-45f8-ae24-c263439ae86a/front-end-libraries",
+      "place_logo": "../../../../assets/logos/FreeCodeCamp.svg"
+    },
+    "1": {
+      "title": "Responsive Web Design",
+      "date": "Ausgestellt: Juli, 2021",
+      "place": "FreeCodeCamp",
+      "time": "300 Stunden",
+      "cetrtificate": "https://www.FreeCodecamp.org/certification/fcca7b18523-6ac5-45f8-ae24-c263439ae86a/responsive-web-design",
+      "place_logo": "../../../../assets/logos/FreeCodeCamp.svg"
+    },
+    "2": {
+      "title": "React JS. Practical course 2020",
+      "date": "Ausgestellt: Apr., 2021",
+      "place": "Udemy Academy",
+      "time": "18.5 Stunden",
+      "cetrtificate": "https://ibb.co/PrVHjL4",
+      "place_logo": "../../../../assets/logos/udemy.svg"
+    },
+    "3": {
+      "title": "The Complete JavaScript + React Course",
+      "date": "Ausgestellt: Jan., 2021",
+      "place": "Udemy Academy",
+      "time": "41.5 Stunden",
+      "cetrtificate": "https://ibb.co/k0hjJP4",
+      "place_logo": "../../../../assets/logos/udemy.svg"
+    },
+    "4": {
+      "title": "WEB Developer 2021",
+      "date": "Ausgestellt: Dez., 2020",
+      "place": "Udemy Academy",
+      "time": "33.5 Stunden",
+      "cetrtificate": "https://ibb.co/99GRRgT",
+      "place_logo": "../../../../assets/logos/udemy.svg"
+    },
+    "5": {
+      "title": "Russische Staatliche Soziale Universität",
+      "date": "2014-2018",
+      "place": "",
+      "cetrtificate": "",
+      "place_logo":  "../../../../assets/logos/RGSU.svg",
+      "uni": true,
+      "faculty": "Wirtschaftliche Sicherheit",
+      "subject": "Bankdienstleistungen von Landesbehörden, die Sicherheit der Russischen Föderation"
+    }
+  },
+  "resume_eng": {
+    "image": "../../../../assets/MMW_CV_ENG.jpg",
+    "download": "download pdf",
+    "link": "https://drive.google.com/u/1/uc?id=1XHA7KzIItt_LEzT-A_7mbgpQow9Fp-5W&export=download"
+  },
+  "resume_ger": {
+    "image": "../../../../assets/MMW_CV_GER.jpg",
+    "download": "pdf herunterladen",
+    "link": "https://drive.google.com/u/1/uc?id=1BXcqodv-8P35iLIypKn87rrt1A8uMfiF&export=download"
+  }
+}

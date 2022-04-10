@@ -1,0 +1,34 @@
+@import "../../../../styles/utils/variables";
+
+footer {
+    height: $tenPX * 30 + $fifteenPX;
+    width: 100%;
+    background-color: #ccc;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        nav {
+            color: $darken !important;
+            width: 30%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            font-size: 25px;
+            i {
+                color: $darken !important;
+            }
+        }
+    }
+
+}

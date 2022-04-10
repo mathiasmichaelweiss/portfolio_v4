@@ -1,0 +1,28 @@
+<ng-container>
+    <div #experience class="experience-overview">
+        <div class="experience-bg">
+        </div>
+        <div class="container">
+            <div class="title-description">
+                <h2 class="white-text bold-text"> {{ workExperience}} </h2>
+                <p>
+                    {{ quote }}
+                </p>
+            </div>
+            <div class="experience-items">
+                <app-card-item 
+                    *ngFor="let exp of experience" 
+                    [title]="exp.position" 
+                    [subtitle]="exp.company" 
+                    [date]="exp.date" 
+                    [text]="exp.about"
+                    [logo]="exp.logo"
+                    >
+                </app-card-item>
+            </div>
+            <a href="mailto:mathiasmichaelweiss@gmail.com">
+                <button class="button long"> {{button}} </button> 
+            </a>
+        </div>
+    </div>
+</ng-container>

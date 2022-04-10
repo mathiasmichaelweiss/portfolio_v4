@@ -1,0 +1,69 @@
+@import "../utils/variables";
+
+// text-color
+.blue-text {
+    color: $blue !important;
+}
+
+.gray-text {
+    color: $gray !important;
+}
+
+.dark-gray-text {
+    color: $darken !important;
+}
+
+.white-text {
+    color: $white;
+}
+
+// font-weight
+.bold-text {
+    font-weight: 900;
+}
+
+.regular-text {
+    font-weight: 400;
+}
+
+.background-blue {
+    background-color: $blue;
+}
+
+// buttons
+.button {
+    background-color: $blue;
+    color: $white;
+    width: $tenPX * 20;
+    height: $tenPX * 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $tenPX * 1.1;
+    margin-top: $tenPX * 1.1;
+    border-radius: $tenPX;
+    transition: box-shadow 0.4s;
+    &:hover {
+        box-shadow: $default-shadow;
+    }
+    &:active {
+        box-shadow: $inner-shadow;
+        box-shadow: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.long {
+    width: $tenPX * 45 !important;
+}
+
+.center {
+    margin: 0 auto;  
+}
+
+.white-button {
+    background-color: $white;
+    color: $blue;
+}

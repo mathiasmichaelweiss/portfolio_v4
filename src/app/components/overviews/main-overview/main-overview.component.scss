@@ -1,0 +1,68 @@
+@import "../../../../styles/utils/variables";
+
+.main-overview {
+    position: relative;
+    z-index: 90;
+    width: 100%;
+    height: 100vh;
+    background-color: $gray;
+    padding-top: $tenPX * 10;
+    overflow: hidden;
+
+    .container {
+        height: 100%;
+        .about-block {
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+                width: 70%;
+                text-align: justify;
+            }
+            @media (max-width: 800px) {
+                width: 100%;
+                position: relative;
+                z-index: 90;
+                color: $white;
+                h2 {
+                    color: $white !important;
+                }
+                p {
+                    color: $white;
+                    width: 100%;
+                }
+                button {
+                    background-color: $white;
+                    color: $blue;   
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .photo {
+        position: absolute;
+        right: 0;
+        top: $tenPX * 10;
+        width: 50%;
+        height: 100%;
+        background-image: url(../../../../assets/images/me.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (max-width: 800px) {
+            width: 100%;
+            z-index: 80;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $transparentBlue;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="../../../../assets/logos/logo.svg" alt="WD">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <a routerLink="/experience">
+                    <li> {{ navigation.experience }} </li>
+                </a>
+                <a routerLink="/skills">
+                    <li> {{ navigation.skills }} </li>
+                </a>
+                <a routerLink="/education">
+                    <li> {{ navigation.education }} </li>
+                </a>
+                <a routerLink="/works">
+                    <li> {{ navigation.works }} </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="menu" (click)="toggleMenu()">
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+        </div>
+        <div class="settings-menu" *ngIf="menu">
+            <div class="setting-btn d-flex justify-content-between">
+                <p 
+                    class="w-50 d-flex justify-content-center h-100 m-0 p-2" 
+                    [ngClass]="{'background-blue text-white': english}"
+                    (click)="setLanguage(true)"    
+                >
+                        EN
+                </p>
+                <p 
+                    class="w-50 d-flex justify-content-center h-100 m-0 p-2" 
+                    [ngClass]="{'background-blue text-white': deutsch}"
+                    (click)="setLanguage(false)"
+                >
+                        DE
+                </p>
+            </div>
+            <!-- <div class="setting-btn d-flex justify-content-between">
+                <p 
+                    class="w-50 d-flex justify-content-center h-100 m-0 p-2" 
+                    [ngClass]="{'background-blue text-white': lightTheme}"
+                    (click)="setTheme(true)"
+                >
+                    <i class="bi bi-brightness-high mr-2"></i> Light
+                </p>
+                <p 
+                    class="w-50 d-flex justify-content-center h-100 m-0 p-2" 
+                    [ngClass]="{'background-blue text-white': darkTheme}"
+                    (click)="setTheme(false)"    
+                >
+                    <i class="bi bi-moon mr-2"></i> Dark
+                </p>
+            </div> -->
+        </div>
+    </div>
+</header>

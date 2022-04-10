@@ -1,0 +1,33 @@
+<ng-container>
+    <div class="container">
+        <h2 class="bold-text">{{ !isSoftSkills ? hsTitle : ssTitle }}</h2>
+    </div>
+
+        <div class="skills-container">
+            <div class="container">
+                <ng-container *ngIf="!isSoftSkills">
+                    <app-skill 
+                        *ngFor="let skill of hardSkills"
+                        [name]="skill.name"
+                        [logo]="skill.logo"
+                    ></app-skill>
+                </ng-container>
+    
+                <ng-container *ngIf="isSoftSkills">
+                    <app-skill 
+                        *ngFor="let skill of softSkills"
+                        [name]="skill.name"
+                        [logo]="skill.logo"
+                    ></app-skill>
+                </ng-container>
+            </div>
+        </div>
+
+        <div *ngIf="!isSoftSkills" class="quote">
+            <p class="white-text w-100 text-center">
+                {{ quote }}
+            </p>
+            <!-- <img src="../../../../assets/images/quote-bg.jpg" alt=""> -->
+        </div>
+</ng-container>
+

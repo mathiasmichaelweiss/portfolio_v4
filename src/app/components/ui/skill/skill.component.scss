@@ -1,0 +1,22 @@
+@import "../../../../styles/utils/variables";
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    padding: ($tenPX * 2 + $fifteenPX) 0;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: $gray;
+    }
+    .logo {
+        padding-right: $tenPX;
+        i {
+            font-size: $tenPX * 3;
+        }
+    }
+    .skill-name {
+        font-size: $tenPX * 2;
+    }
+}

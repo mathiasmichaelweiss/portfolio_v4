@@ -1,0 +1,26 @@
+<div class="perspective-item">
+    <div #cardItem 
+        (mousemove)="move($event, cardItem)" 
+        (mouseout)="out(cardItem)" 
+        [ngStyle]="{'width': width + '%'}" 
+        class="card-item">
+        <div class="logo">
+            <img [src]="logo ? logo : placeLogo" alt="">
+        </div>
+        <div class="card-item-inner h-100">
+            <span *ngIf="place && place !== 'RGSU'" class="date dark-gray-text mb-2 text-left">{{ time }}</span>
+            <span class="title">{{ title }}</span>
+            <span *ngIf="place != 'RGSU'" class="subtitle">{{ subtitle ? subtitle : place }}</span>
+            <span class="date dark-gray-text">{{ date }}</span>
+            <p class="small-p">
+                {{ place === "RGSU" ? subject : text }}
+            </p>
+    
+            <div class="certificate">
+                <a [href]="cetrtificate" target="_blank" *ngIf="place && place !== 'RGSU'">
+                    <li>{{ certificateText }}</li>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

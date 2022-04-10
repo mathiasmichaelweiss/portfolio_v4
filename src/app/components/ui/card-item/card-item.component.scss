@@ -1,0 +1,56 @@
+@import "../../../../styles/utils/variables";
+
+.card-item {
+    position: relative;
+    width: $tenPX * 41 + $fifteenPX;
+    height: $tenPX * 34;
+    border-radius: $tenPX + $fifteenPX;
+    background-color: $white;
+    box-shadow: $default-shadow;
+    padding: $tenPX * 3;
+    padding-top: ($tenPX * 6 + $fifteenPX) / 2 + $fifteenPX;
+    transition: transform 0.2s;
+    z-index: 90;
+    .logo {
+        position: absolute;
+        left: $fifteenPX * 2;
+        top: - ($tenPX * 6 + $fifteenPX) / 2;
+        background-color: $blue;
+        width: $tenPX * 6 + $fifteenPX;
+        height: $tenPX * 6 + $fifteenPX;
+        display: flex;  
+        justify-content: center; 
+        align-items: center;
+        border-radius: $fifteenPX;
+        color: $white;
+        font-size: $tenPX * 3 + $tenPX / 2;
+    }
+    .card-item-inner {
+        display: flex;
+        flex-direction: column;
+        .title, .subtitle, .date {
+            font-weight: 700;
+            font-size: $tenPX * 2;
+        }
+        .title, .subtitle {
+            margin-bottom: $tenPX;
+        }
+        li {
+            list-style: none;
+            cursor: pointer;
+            transition: color 0.3s;
+            &:hover {
+                color: $blue;
+            }
+        }
+        .certificate {
+            height: 100%;
+            display: flex;
+            align-items: end;
+        }
+    }
+    // &:hover {
+    //     transform: scale(1.05);
+    //     z-index: 95;
+    // }
+}

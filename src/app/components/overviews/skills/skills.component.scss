@@ -1,0 +1,62 @@
+@import "../../../../styles/utils/variables";
+
+.container {
+    padding: 0;
+}
+.skills-container {
+    background-color: $gray;
+    .container {
+        padding: ($tenPX * 3) 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        grid-gap: 0.2rem;
+        color: $darken;
+    }
+    .skill {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        padding: ($tenPX * 2 + $fifteenPX) 0;
+        .logo {
+            padding-right: $tenPX;
+            i {
+                font-size: $tenPX * 5;
+            }
+        }
+        .skill-name {
+            font-size: $tenPX * 3;
+        }
+    }
+}
+.quote {
+    height: $tenPX * 50 + $fifteenPX;
+    position: relative;
+    margin-bottom: $blocks-margin;
+    overflow: hidden;
+    background-image: url(../../../../assets/images/quote-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+        height: 120%;
+    }
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 90;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 80;
+        left: 0;
+        top: 0;
+        background-color: $transparentBlue;
+    }
+}

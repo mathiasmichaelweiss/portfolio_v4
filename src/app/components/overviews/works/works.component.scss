@@ -1,0 +1,106 @@
+@import "../../../../styles/utils/variables";
+
+@keyframes transit {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    .title-description {
+        margin-bottom: $tenPX * 10;
+    }
+}
+.dev-logos {
+    font-size: 25px;
+}
+.works-overview {
+    margin-bottom: $blocks-margin;
+    position: relative;
+    height: 50%;
+    .container {
+        height: 100%;
+        .work-image {
+            position: relative;
+            z-index: 90;
+            width: 450px;
+            height: 450px;
+            max-height: 450px;
+            overflow: hidden;
+            border-radius: 25px;
+            top: -$tenPX * 33 / 6;
+            box-shadow: $default-shadow;
+            transform: rotateY(15deg);
+            .work-image-wrapper {
+                position: relative;
+                left: 0;
+                transition: left 0.3s ease-in-out;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .works-description {
+            width: 65%;
+            z-index: 90;
+            height: $tenPX * 33;
+            display: flex;
+            align-items: center;
+            &-inner {
+                width: 80%;
+                position: relative;
+                left: 0;
+                transition: left 0.3s ease-in-out;
+                display: flex;
+                overflow: hidden;
+                .work-descr-slider {
+                    position: relative;
+                    left: 0;
+                    transition: left 0.3s ease-in-out;
+                }
+            }
+            // 1270px
+            // 990px
+            .prev, .next {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: $fifteenPX + $tenPX;
+                color: $white;
+                cursor: pointer;
+                position: relative;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: $transparentDarkLighter;
+                }
+            }
+            .prev {
+                margin-right: $tenPX;
+            }
+            .next {
+                margin-left: $tenPX;
+            }
+        }
+    }
+    .works-bg {
+        position: absolute;
+        height: $tenPX * 33;
+        width: 100%;
+        overflow: hidden;
+        z-index: 80;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: $blue;
+        }
+    }
+}
