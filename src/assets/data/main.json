@@ -13,7 +13,7 @@
   },
   "about": {
     "english": "My live style is about daily challenges and steady progress. I am always on the lookout for best programming practices, ways to improve code quality. Every time I try to keep my code as clean and structured as possible.",
-    "german": "bei meinem lifestyle geht es um tägliche herausforderungen und stetigen fortschritt. ich bin immer auf der suche nach den besten programmierpraktiken und möglichkeiten zur verbesserung der codequalität. jedes mal versuche ich, meinen code so sauber und strukturiert wie möglich zu halten."
+    "german": "Bei meinem Lifestyle geht es um tägliche Herausforderungen und stetigen Fortschritt. Ich bin immer auf der suche nach den besten Programmierpraktiken und Möglichkeiten zur verbesserung der Codequalität. Jedes mal versuche ich, meinen Code so sauber und strukturiert wie möglich zu halten."
   },
   "adress": {
     "english": "heilbronn, germany",
@@ -143,6 +143,24 @@
       "link": "https://wealther-3529e.web.app/",
       "dev": {
         "react": "devicon-react-original"
+      }
+    },
+    "kkal_calcularot": {
+      "image": "../../../../assets/works/kkal-calculator.jpg",
+      "languages": {
+        "english": {
+          "title": "Сalorie Сalculator",
+          "description": "Here you can calculate your daily calorie intake"
+        },
+        "german": {
+          "title": "Kalorienrechner",
+          "description": "Hier können Sie die tägliche Kalorienaufnahme berechnen"
+        }
+      },
+      "link": "https://kkal-calculator.web.app/",
+      "dev": {
+        "react": "devicon-react-original",
+        "miu": "devicon-materialui-plain"
       }
     },
     "weiss_movie": {
